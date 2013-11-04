@@ -1,4 +1,8 @@
 Project::Application.routes.draw do
+  
+  root :to => 'tweets#index'
+  
+  match 'create' => 'tweets#create', :as => 'create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
